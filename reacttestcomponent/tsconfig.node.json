@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    // "moduleResolution": "Node",
+    "moduleResolution": "bundler", //me no me muestra cambios mientras corre la app
+
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["vite.config.ts"]
+}
