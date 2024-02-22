@@ -26,6 +26,7 @@ specifiers:
   react-datepicker: ^5.1.0
   react-dom: ^18.2.0
   react-hook-form: ^7.50.1
+  react-papaparse: ^4.4.0
   react-router-dom: ^6.22.0
   react-select: ^5.8.0
   react-spinners: ^0.13.8
@@ -51,6 +52,7 @@ dependencies:
   react-datepicker: 5.1.0_biqbaboplfbrettd7655fr4n2y
   react-dom: 18.2.0_react@18.2.0
   react-hook-form: 7.50.1_react@18.2.0
+  react-papaparse: 4.4.0
   react-router-dom: 6.22.0_biqbaboplfbrettd7655fr4n2y
   react-select: 5.8.0_jczjbtsmbzi7zofs22bstoer6y
   react-spinners: 0.13.8_biqbaboplfbrettd7655fr4n2y
@@ -997,13 +999,11 @@ packages:
     resolution: {integrity: sha512-7xMnVEcZFu0DikYjWOlRq7NTPETrm7teqUT2WkQjrTIkEgUyyGdWsj/Zg8bEJt5TNklzbPD1X3fqfsHw3SpapQ==}
     dependencies:
       undici-types: 5.26.5
-    dev: true
 
   /@types/papaparse/5.3.14:
     resolution: {integrity: sha512-LxJ4iEFcpqc6METwp9f6BV6VVc43m6MfH0VqFosHvrUgfXiFe6ww7R3itkOQ+TCK6Y+Iv/+RnnvtRZnkc5Kc9g==}
     dependencies:
       '@types/node': 20.11.19
-    dev: true
 
   /@types/parse-json/4.0.2:
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
@@ -3136,6 +3136,14 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
+  /react-papaparse/4.4.0:
+    resolution: {integrity: sha512-xTEwHZYJ+1dh9mQDQjjwJXmWyX20DdZ52u+ddw75V+Xm5qsjXSvWmC7c8K82vRwMjKAOH2S9uFyGpHEyEztkUQ==}
+    engines: {node: '>=8', npm: '>=5'}
+    dependencies:
+      '@types/papaparse': 5.3.14
+      papaparse: 5.4.1
+    dev: false
+
   /react-router-dom/6.22.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-z2w+M4tH5wlcLmH3BMMOMdrtrJ9T3oJJNsAlBJbwk+8Syxd5WFJ7J5dxMEW0/GEXD1BBis4uXRrNIz3mORr0ag==}
     engines: {node: '>=14.0.0'}
@@ -3576,7 +3584,6 @@ packages:
 
   /undici-types/5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
-    dev: true
 
   /update-browserslist-db/1.0.13_browserslist@4.22.3:
     resolution: {integrity: sha512-xebP81SNcPuNpPP3uzeW1NYXxI3rxyJzF3pD6sH4jE7o/IX+WtSpwnVU+qIsDPyk0d3hmFQ7mjqc6AtV604hbg==}
