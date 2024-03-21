@@ -22,7 +22,10 @@ import { CustomBarChart } from './recharts/barcharRecharts';
 // import ZodValidForm from './zodValidForm';
 import { ConvertHoursToCalendarUnit } from './ConvertHoursToCalendarUnit';
 import { CsvTest } from './csv/CsvTest';
-
+import { Filter } from './javascript_vanilla/Filter';
+import ZodValidForm from './ZodValidForm';
+import { Map } from './javascript_vanilla/Map';
+import { v4 as uuidv4 } from 'uuid';
 function App() {
   // const ar1: number[] = [1, 2, 3];
   // const ar1: number[] = [];
@@ -35,10 +38,12 @@ function App() {
   });
   // console.log('PADRE query.isLoading', count, query.isLoading);
 
+  const exercises = [<Map />, <Filter />, <CsvTest />, <ZodValidForm />];
   return (
     <>
       {/* Cargar archivo csv */}
-      <CsvTest />
+
+      {exercises.map((exercise) => exercise)}
       {/* Convert minuto a hora */}
       {/* <ConvertHoursToCalendarUnit /> */}
       {/* <CustomBarChart /> */}
