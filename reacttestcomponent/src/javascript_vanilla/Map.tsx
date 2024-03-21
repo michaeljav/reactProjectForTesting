@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 export const Map: React.FC = () => {
-  const [filsearch, setFilSearh] = useState('');
+  const [mapsearch, setMapSearh] = useState('');
   const arrayOfObjects = [
     { id: 1, name: 'John', age: 30, city: 'New York', country: 'USA' },
     {
@@ -82,12 +82,12 @@ export const Map: React.FC = () => {
   // console.log(randomUUID);
   const map = arrayOfObjects.map((f) => {
     // if (f.id?.toString().includes(filsearch) || f.name.includes(filsearch)) {
-    if (f.name?.toLowerCase().includes(filsearch?.toLowerCase())) {
+    if (f.name?.toLowerCase().includes(mapsearch?.toLowerCase())) {
       return f.name;
     }
   });
-  const onChange = (event) => {
-    setFilSearh(event.target.value);
+  const onChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setMapSearh(event.target.value);
   };
   return (
     <>
@@ -97,7 +97,7 @@ export const Map: React.FC = () => {
             className='border border-black'
             type='text'
             onChange={onChange}
-            value={filsearch}
+            value={mapsearch}
           />
           <p className='font-bold'>MAP JAVASCRIPT</p>
           {map.map((f) => (

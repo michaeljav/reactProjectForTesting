@@ -26,24 +26,31 @@ import { Filter } from './javascript_vanilla/Filter';
 import ZodValidForm from './ZodValidForm';
 import { Map } from './javascript_vanilla/Map';
 import { v4 as uuidv4 } from 'uuid';
+import { Reduce } from './javascript_vanilla/Reduce';
 function App() {
   // const ar1: number[] = [1, 2, 3];
   // const ar1: number[] = [];
   const count = useRef(0);
   count.current++;
 
-  const query: UseQueryResult = useQuery({
-    queryKey: ['characters'],
-    queryFn: () => getCharacters({ page: 1, Name: '' }),
-  });
-  // console.log('PADRE query.isLoading', count, query.isLoading);
+  // const query: UseQueryResult = useQuery({
+  //   queryKey: ['characters'],
+  //   queryFn: () => getCharacters({ page: 1, Name: '' }),
+  // });
+  // // console.log('PADRE query.isLoading', count, query.isLoading);
 
-  const exercises = [<Map />, <Filter />, <CsvTest />, <ZodValidForm />];
+  const exercises = [
+    <Reduce />,
+    // <Map />,
+    // <Filter />,
+    // <CsvTest />,
+    // <ZodValidForm />,
+  ];
   return (
     <>
       {/* Cargar archivo csv */}
-
       {exercises.map((exercise) => exercise)}
+
       {/* Convert minuto a hora */}
       {/* <ConvertHoursToCalendarUnit /> */}
       {/* <CustomBarChart /> */}
@@ -56,7 +63,6 @@ function App() {
       {/* <ReactQueryProblem query={query} /> */}
       {/* <ReactQuery/> */}
       {/* < Toast_test/> */}
-
       {/* <GridTest /> */}
       {/* <FlexTest/> */}
       {/* <TestFont/> */}
