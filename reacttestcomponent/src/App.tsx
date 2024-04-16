@@ -27,6 +27,8 @@ import ZodValidForm from './ZodValidForm';
 import { Map } from './javascript_vanilla/Map';
 import { v4 as uuidv4 } from 'uuid';
 import { Reduce } from './javascript_vanilla/Reduce';
+import { RepeatedVoting } from './churchVoting/calculvoting';
+import { LoadDataApi } from './LoadObjectFetch/LoadDataAPI';
 function App() {
   // const ar1: number[] = [1, 2, 3];
   // const ar1: number[] = [];
@@ -48,8 +50,11 @@ function App() {
   ];
   return (
     <>
+      <LoadDataApi />
+      {/* <RepeatedVoting /> */}
+      {/* <CustomSelect /> */}
       {/* Cargar archivo csv */}
-      {exercises.map((exercise) => exercise)}
+      {/* {exercises.map((exercise) => exercise)} */}
 
       {/* Convert minuto a hora */}
       {/* <ConvertHoursToCalendarUnit /> */}
@@ -69,7 +74,7 @@ function App() {
       {/* <ScreenSpinnerLoadingTesting /> */}
       {/* <SortWithoutBuiltFunnc />
       <SortTest /> */}
-      {/* <CustomSelect /> */}
+
       {/* <TuringTest /> */}
       {/* <ReactHotToast /> */}
       {/* <GridTest /> */}
