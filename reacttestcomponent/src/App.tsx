@@ -50,8 +50,8 @@ function App() {
   ];
   return (
     <>
-      <LoadDataApi />
-      {/* <RepeatedVoting /> */}
+      {/* <LoadDataApi /> */}
+      <RepeatedVoting />
       {/* <CustomSelect /> */}
       {/* Cargar archivo csv */}
       {/* {exercises.map((exercise) => exercise)} */}
