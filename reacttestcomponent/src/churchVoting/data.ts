@@ -1,0 +1,62 @@
+// //case 1
+export const data = [
+  { id: 1, name: 'Alice', votes: 18 },
+  { id: 2, name: 'Bob', votes: 17 },
+  { id: 3, name: 'Charlie', votes: 16 },
+  { id: 4, name: 'David', votes: 16 },
+  { id: 5, name: 'Eva', votes: 15 },
+  { id: 6, name: 'Frank', votes: 14 },
+  { id: 7, name: 'Grace', votes: 13 },
+  { id: 8, name: 'Henry', votes: 12 },
+  { id: 9, name: 'Isabel', votes: 11 },
+  { id: 10, name: 'Jack', votes: 10 },
+  { id: 11, name: 'Kate', votes: 9 },
+  { id: 12, name: 'Liam', votes: 8 },
+  { id: 13, name: 'Mia', votes: 7 },
+  { id: 14, name: 'Noah', votes: 7 },
+  { id: 15, name: 'Olivia', votes: 7 },
+  { id: 16, name: 'Peter', votes: 5 },
+  { id: 17, name: 'Quinn', votes: 3 },
+];
+
+// //case 2
+// export const data = [
+//   { id: 1, name: 'Alice', votes: 18 },
+//   { id: 2, name: 'Bob', votes: 17 },
+//   { id: 3, name: 'Charlie', votes: 16 },
+//   { id: 4, name: 'David', votes: 16 },
+//   { id: 5, name: 'Eva', votes: 15 },
+//   { id: 6, name: 'Frank', votes: 14 },
+//   { id: 7, name: 'Grace', votes: 13 },
+//   { id: 8, name: 'Henry', votes: 12 },
+//   { id: 9, name: 'Isabel', votes: 11 },
+//   { id: 10, name: 'Jack', votes: 10 },
+//   { id: 11, name: 'Kate', votes: 9 },
+//   { id: 12, name: 'Liam', votes: 7 },
+//   { id: 13, name: 'Mia', votes: 7 },
+//   { id: 14, name: 'Noah', votes: 7 },
+//   { id: 15, name: 'Olivia', votes: 7 },
+//   { id: 16, name: 'Peter', votes: 5 },
+//   { id: 17, name: 'Quinn', votes: 3 },
+// ];
+
+//case 3
+// export const data = [
+//   { id: 1, name: 'Alice', votes: 18 },
+//   { id: 2, name: 'Bob', votes: 17 },
+//   { id: 3, name: 'Charlie', votes: 16 },
+//   { id: 4, name: 'David', votes: 16 },
+//   { id: 5, name: 'Eva', votes: 15 },
+//   { id: 6, name: 'Frank', votes: 7 },
+//   { id: 7, name: 'Grace', votes: 7 },
+//   { id: 8, name: 'Henry', votes: 7 },
+//   { id: 9, name: 'Isabel', votes: 7 },
+//   { id: 10, name: 'Jack', votes: 7 },
+//   { id: 11, name: 'Kate', votes: 7 },
+//   { id: 12, name: 'Liam', votes: 7 },
+//   { id: 13, name: 'Mia', votes: 7 },
+//   { id: 14, name: 'Noah', votes: 7 },
+//   { id: 15, name: 'Olivia', votes: 7 },
+//   { id: 16, name: 'Peter', votes: 5 },
+//   { id: 17, name: 'Quinn', votes: 3 },
+// ];
