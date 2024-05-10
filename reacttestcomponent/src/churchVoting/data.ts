@@ -15,7 +15,7 @@ export const data = [
   { id: 13, name: 'Mia', votes: 7 },
   { id: 14, name: 'Noah', votes: 7 },
   { id: 15, name: 'Olivia', votes: 7 },
-  { id: 16, name: 'Peter', votes: 5 },
+  { id: 16, name: 'Peter', votes: 7 },
   { id: 17, name: 'Quinn', votes: 3 },
 ];
 

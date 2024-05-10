@@ -57,7 +57,7 @@ export const LoadDataApi: React.FC = () => {
 
       const element = data[index];
       //para enviar datos comentado
-      // postData(element, endpoint, jwt);
+      postData(element, endpoint, jwt);
       // pro.push(postData(element, endpoint, jwt));
     }
 

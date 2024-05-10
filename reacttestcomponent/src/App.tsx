@@ -29,6 +29,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { Reduce } from './javascript_vanilla/Reduce';
 import { RepeatedVoting } from './churchVoting/calculvoting';
 import { LoadDataApi } from './LoadObjectFetch/LoadDataAPI';
+import { AppPagination } from './pagination/App';
 function App() {
   // const ar1: number[] = [1, 2, 3];
   // const ar1: number[] = [];
@@ -50,7 +51,10 @@ function App() {
   ];
   return (
     <>
+      {/* esto es para cargar data inicial del proyecto csv  del servicio */}
       {/* <LoadDataApi /> */}
+
+      {/* <AppPagination /> */}
       <RepeatedVoting />
       {/* <CustomSelect /> */}
       {/* Cargar archivo csv */}
