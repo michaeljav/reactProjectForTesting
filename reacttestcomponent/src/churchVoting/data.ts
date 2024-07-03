@@ -78,8 +78,8 @@ export interface VoterWithSec extends Voter {
 
 export const data: Voter[] = [
   { id: 10, name: "Jack", votes: 7 },
-  { id: 11, name: "Kate", votes: 7 },
-  { id: 11, name: "Kate", votes: 0 },
+  { id: 11, name: "Kate", votes: 1 },
+  // { id: 11, name: "Kate", votes: 9 },
 ];
 
 //case 0  se repite 1 grupo, pero  en el index 13 al 14 no. EL 13 tiene mas votos que el 14

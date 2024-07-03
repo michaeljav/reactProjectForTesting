@@ -63,15 +63,9 @@ export function listRepeted(
   const lastPersonVotes =
     votersOrdered[numberOfElectorsByDefault - 1]?.votes || 0;
   const nextPersonVotes = votersOrdered[numberOfElectorsByDefault]?.votes || 0;
-  console.log("lastPersonVotes", lastPersonVotes);
-  console.log("nextPersonVotes", nextPersonVotes);
+
   //si la cantidad de voto la ultima persona a buscar en la lista es  mayor, ya que esta ordenado  por votos descendentemente,  entonces  retorno hasta las personas necesitadas.
   if (lastPersonVotes > nextPersonVotes) {
-    console.log(
-      "si el ultimo valor es mayor que el siguiente lastPersonVotes>nextPersonVotes",
-      lastPersonVotes,
-      nextPersonVotes
-    );
     const elected = votersOrdered.slice(0, numberOfElectorsByDefault);
     //eliminar la  propiedad sec porque solo era para validar si al casar los 13 el numero 14 tenia la misma cantdad de votantes.
     return {
@@ -81,7 +75,6 @@ export function listRepeted(
       error: "",
     } as Response;
   }
-  console.log("VER EL ORDENAMIENTO", votersOrdered);
 
   //agrupo por cantidad de votos
   votersOrdered.forEach((voter) => {
@@ -91,7 +84,6 @@ export function listRepeted(
     voteMap.get(voter.votes)?.push(voter);
   });
 
-  console.log("VER LA AGRUPACION", voteMap);
   //extrago los grupos que tienen de dos elemento en adelante
   const repeatedGroups: VoterWithSec[][] = Array.from(voteMap.values()).filter(
     (group) => group.length > 1
@@ -123,8 +115,6 @@ export function listRepeted(
   const minSec = Math.min(...lastGroupWithSameVotes);
   const maxSec = Math.max(...lastGroupWithSameVotes);
 
-  console.log("Ultimo set ", lastSet, includeNumberOfElectors);
-
   //si lo incluye la secuencia  y es menor o igual al numero total de personas a elegir,
   //selecciona los 13 primeros. (recuerda que en  "votersOrdered" estan ordenado decendentemente)
   if (includeNumberOfElectors && maxSec <= numberOfElectorsByDefault) {
@@ -138,16 +128,7 @@ export function listRepeted(
   }
 
   const elected = votersOrdered.slice(0, minSec - 1);
-  console.log(
-    "PRIMERA SELECCION",
-    deleteProperty(elected, "sec"),
-    JSON.stringify(deleteProperty(elected, "sec"))
-  );
-  console.log(
-    "SEGUIENTE RONDA",
-    deleteProperty(lastSet, "sec"),
-    JSON.stringify(deleteProperty(lastSet, "sec"))
-  );
+
   return {
     chosenForThisRound: deleteProperty(elected, "sec"),
     electedWithSameVotesForNextRound: deleteProperty(lastSet, "sec"),
