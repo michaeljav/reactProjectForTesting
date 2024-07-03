@@ -49,14 +49,6 @@ export function listRepeted(
     } as Response;
   }
 
-  // //SI NO TIENE VOTOS
-  // if (voters.length === 0 || numberOfElectorsByDefault === 0) {
-  //   return {
-  //     chosenForThisRound: [],
-  //     electedWithSameVotesForNextRound: [],
-  //     missingAmount: 0,
-  //   } as Response;
-  // }
   //Si la cantidad a buscar de personas (por defecto)  es mayor que la lista de personas votadas enviadas, entonces envio  vacio.
   if (numberOfElectorsByDefault > voters.length) {
     return {
