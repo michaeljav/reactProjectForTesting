@@ -9,8 +9,8 @@ export const LastRepeatedVoting: React.FC = () => {
   useEffect(() => {
     // getRepeatedVoting();
     // por defecto son 13 miembros a elegir
-    // const numberOfElectors = 13;
-    const numberOfElectors = 2;
+    const numberOfElectors = 13;
+    // const numberOfElectors = 2;
     // const numberOfElectors = 4;
     // const numberOfElectors = 2;
     const arr = listRepeted(data, numberOfElectors);

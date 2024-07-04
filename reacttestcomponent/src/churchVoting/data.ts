@@ -56,31 +56,31 @@ export interface VoterWithSec extends Voter {
 // ];
 
 //case -1  NO SE REPITEN
-// export const data: Voter[] = [
-//   { id: 1, name: "Alice", votes: 17 },
-//   { id: 2, name: "Bob", votes: 16 },
-//   { id: 3, name: "Charlie", votes: 15 },
-//   { id: 4, name: "David", votes: 14 },
-//   { id: 5, name: "Eva", votes: 13 },
-//   { id: 6, name: "Frank", votes: 12 },
-//   { id: 7, name: "Grace", votes: 11 },
-//   { id: 8, name: "Henry", votes: 10 },
-//   { id: 9, name: "Isabel", votes: 9 },
-//   { id: 10, name: "Jack", votes: 8 },
-//   { id: 11, name: "Kate", votes: 7 },
-//   { id: 12, name: "Liam", votes: 6 },
-//   { id: 13, name: "Mia", votes: 5 },
-//   { id: 14, name: "Noah", votes: 4 },
-//   { id: 15, name: "Olivia", votes: 3 },
-//   { id: 16, name: "Peter", votes: 2 },
-//   { id: 17, name: "Quinn", votes: 1 },
-// ];
-
 export const data: Voter[] = [
-  { id: 10, name: "Jack", votes: 7 },
-  { id: 11, name: "Kate", votes: 1 },
-  // { id: 11, name: "Kate", votes: 9 },
+  { id: 1, name: "Alice", votes: 17 },
+  { id: 2, name: "Bob", votes: 16 },
+  { id: 3, name: "Charlie", votes: 15 },
+  { id: 4, name: "David", votes: 14 },
+  { id: 5, name: "Eva", votes: 13 },
+  { id: 6, name: "Frank", votes: 12 },
+  { id: 7, name: "Grace", votes: 11 },
+  { id: 8, name: "Henry", votes: 10 },
+  { id: 9, name: "Isabel", votes: 9 },
+  { id: 10, name: "Jack", votes: 8 },
+  { id: 11, name: "Kate", votes: 7 },
+  { id: 12, name: "Liam", votes: 6 },
+  { id: 13, name: "Mia", votes: 5 },
+  { id: 14, name: "Noah", votes: 4 },
+  { id: 15, name: "Olivia", votes: 3 },
+  { id: 16, name: "Peter", votes: 2 },
+  { id: 17, name: "Quinn", votes: 1 },
 ];
+
+// export const data: Voter[] = [
+//   { id: 10, name: "Jack", votes: 7 },
+//   { id: 11, name: "Kate", votes: 1 },
+//   // { id: 11, name: "Kate", votes: 9 },
+// ];
 
 //case 0  se repite 1 grupo, pero  en el index 13 al 14 no. EL 13 tiene mas votos que el 14
 // export const data: Voter[] = [
@@ -181,8 +181,8 @@ export const data: Voter[] = [
 // export const data: Voter[] = [
 //   { id: 10, name: "Jack", votes: 7 },
 //   { id: 11, name: "Kate", votes: 7 },
-//   { id: 12, name: "Liam", votes: 1 },
-//   { id: 13, name: "Mia", votes: 2 },
+//   { id: 12, name: "Liam", votes: 7 },
+//   { id: 13, name: "Mia", votes: 7 },
 //   { id: 14, name: "Noah", votes: 7 },
 // ];
 
